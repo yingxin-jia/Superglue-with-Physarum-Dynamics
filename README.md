@@ -68,7 +68,6 @@ python train.py
 * Use `--viz_extension` to set the visualization file extension (default: `png`). Use pdf for highest-quality.
 
 ### Visualization Demo
-Due to space constraints, the experimentations bellow allow a small number of keypoints. This constraint will possibly be lifted if using sparse-sparse matrix multiplication.
 The matches are colored by their predicted confidence in a jet colormap (Red: more confident, Blue: less confident). 
 
 You should see images like this inside of `dump_match_pairs/`
