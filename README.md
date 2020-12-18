@@ -76,9 +76,9 @@ The matches are colored by their predicted confidence in a jet colormap (Red: mo
 
 You should see images like this inside of `dump_match_pairs/`
 
-<img src="assets/49_matches.png" width="800">
-<img src="assets/219_matches2.png" width="800">
-<img src="assets/149_matches.png" width="800">
-<img src="assets/439_matches2.png" width="800">
-<img src="assets/699_matches.png" width="800">
+<img src="dump_match_pairs/49_matches.png" width="800">
+<img src="dump_match_pairs/219_matches2.png" width="800">
+<img src="dump_match_pairs/149_matches.png" width="800">
+<img src="dump_match_pairs/439_matches2.png" width="800">
+<img src="dump_match_pairs/699_matches.png" width="800">
 
