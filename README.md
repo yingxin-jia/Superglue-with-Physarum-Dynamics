@@ -1,19 +1,22 @@
 # SuperGlue with Physarum Dynamics
 
 ## Introduction
-<p align="center">
-  <img src="assets/superglue1.png" width="400"/>
-</p>
 
- This repository contains the implementation of SuperGlue with its original Sinkhorn Algorithm replaced by *Physarum Dynamics* solver. Physarum Dynamics is a very efficient  differentiable solver for general linear programming problems. Physarum Dynamics can be used in a plug and play manner within deep neural networks as a layer, which converges quickly without the need for a feasible initial point. 
+ This repository contains the implementation of SuperGlue with its original Sinkhorn Algorithm replaced by Physarum Dynamics solver. Physarum Dynamics is a very efficient  differentiable solver for general linear programming problems. Physarum Dynamics can be used in a plug and play manner within deep neural networks as a layer, which converges quickly without the need for a feasible initial point. 
 
 For more details, please see:
 * Physarum Dynamics full paper: [Physarum Powered Differentiable Linear Programming Layers and Applications](https://arxiv.org/abs/2004.14539).
 * SuperGlue full paper: [SuperGlue: Learning Feature Matching with Graph Neural Networks](https://arxiv.org/abs/1911.11763).
 
+
  The SuperGlue network is a Graph Neural Network combined with an Optimal Matching layer that is trained to perform matching on two sets of sparse image features. SuperGlue operates as a "middle-end," performing context aggregation, matching, and filtering in a single end-to-end architecture. Correspondences across images have some constraints:
  * A keypoint can have at most a single correspondence in the another image.
  * Some keypoints will be unmatched due to occlusion and failure of the detector.
+
+<p align="center">
+  <img src="assets/superglue1.png" width="400"/>
+</p>
+
 
  SuperGlue aims to find all correspondences between reprojections of the same points and identifying keypoints that have no matches. There are two main components in SuperGlue architecture: Attentional Graph Neural Network and Optimal Matching Layer.
 
