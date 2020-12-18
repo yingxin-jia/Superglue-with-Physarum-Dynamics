@@ -20,9 +20,6 @@ For more details, please see:
 
  SuperGlue aims to find all correspondences between reprojections of the same points and identifying keypoints that have no matches. There are two main components in SuperGlue architecture: Attentional Graph Neural Network and Optimal Matching Layer.
 
-<p align="center">
-  <img src="assets/superglue2.png"/>
-</p>
 
 ## Dependencies
 * Python 3
