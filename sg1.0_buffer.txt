@@ -1,0 +1,155 @@
+(base) yinxinjia@euler:~/yingxin/SuperGluePretrainedNetwork-modified1.0$ conda activate superglue
+(superglue) yinxinjia@euler:~/yingxin/SuperGluePretrainedNetwork-modified1.0$ python train.py
+Namespace(batch_size=1, cache=False, epoch=20, eval=False, eval_input_dir='assets/scannet_sample_images/', eval_output_d
+ir='dump_match_pairs/', eval_pairs_list='assets/scannet_sample_pairs_with_gt.txt', fast_viz=False, keypoint_threshold=0.
+005, learning_rate=0.001, match_threshold=0.2, max_keypoints=1024, max_length=-1, nms_radius=4, opencv_display=False, re
+size=[640, 480], resize_float=False, show_keypoints=False, shuffle=False, sinkhorn_iterations=20, superglue='indoor', tr
+ain_path='/dev/shm/MSCOCO2014_yingxin/', viz=False, viz_extension='png')
+Will write visualization images to directory "dump_match_pairs"
+Loaded SuperPoint model
+Epoch [1/20], Step [50/40504], Loss: 1.5537
+Epoch [1/20], Step [100/40504], Loss: 1.2992
+Epoch [1/20], Step [150/40504], Loss: 1.2431
+Epoch [1/20], Step [200/40504], Loss: 1.2394
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000578570.jpg
+Epoch [1/20], Step [250/40504], Loss: 1.2374
+Epoch [1/20], Step [300/40504], Loss: 1.1839
+Epoch [1/20], Step [350/40504], Loss: 1.2306
+Epoch [1/20], Step [400/40504], Loss: 1.1099
+Epoch [1/20], Step [450/40504], Loss: 1.1603
+Epoch [1/20], Step [500/40504], Loss: 1.1201
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000574823.jpg
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000574487.jpg
+Epoch [1/20], Step [550/40504], Loss: 1.0901
+Epoch [1/20], Step [600/40504], Loss: 1.1236
+Epoch [1/20], Step [650/40504], Loss: 1.0752
+Epoch [1/20], Step [700/40504], Loss: 1.1375
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000572028.jpg
+Epoch [1/20], Step [750/40504], Loss: 1.0588
+Epoch [1/20], Step [800/40504], Loss: 1.0516
+Epoch [1/20], Step [850/40504], Loss: 1.0198
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000569703.jpg
+Epoch [1/20], Step [900/40504], Loss: 0.9944
+Epoch [1/20], Step [950/40504], Loss: 0.9513
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000568315.jpg
+Epoch [1/20], Step [1000/40504], Loss: 0.9815
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000567565.jpg
+Epoch [1/20], Step [1050/40504], Loss: 1.0257
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000566757.jpg
+Epoch [1/20], Step [1100/40504], Loss: 1.0205
+Epoch [1/20], Step [1150/40504], Loss: 0.9628
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000565326.jpg
+Epoch [1/20], Step [1200/40504], Loss: 0.9504
+Epoch [1/20], Step [1250/40504], Loss: 0.9425
+Epoch [1/20], Step [1300/40504], Loss: 0.9574
+Epoch [1/20], Step [1350/40504], Loss: 0.9126
+Epoch [1/20], Step [1400/40504], Loss: 0.9402
+Epoch [1/20], Step [1450/40504], Loss: 0.8982
+Epoch [1/20], Step [1500/40504], Loss: 0.9401
+Epoch [1/20], Step [1550/40504], Loss: 0.8805
+Epoch [1/20], Step [1600/40504], Loss: 0.8876
+Epoch [1/20], Step [1650/40504], Loss: 0.8413
+Epoch [1/20], Step [1700/40504], Loss: 0.9122
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000557731.jpg
+Epoch [1/20], Step [1750/40504], Loss: 0.8603
+Epoch [1/20], Step [1800/40504], Loss: 0.8825
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000555900.jpg
+Epoch [1/20], Step [1850/40504], Loss: 0.8898
+Epoch [1/20], Step [1900/40504], Loss: 0.8677
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000554433.jpg
+Epoch [1/20], Step [1950/40504], Loss: 0.8329
+Epoch [1/20], Step [2000/40504], Loss: 0.8792
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000553072.jpg
+Epoch [1/20], Step [2050/40504], Loss: 0.8520
+Epoch [1/20], Step [2100/40504], Loss: 0.8653
+Epoch [1/20], Step [2150/40504], Loss: 0.8100
+Epoch [1/20], Step [2200/40504], Loss: 0.9010
+Epoch [1/20], Step [2250/40504], Loss: 0.7972
+Epoch [1/20], Step [2300/40504], Loss: 0.8403
+Epoch [1/20], Step [2350/40504], Loss: 0.8577
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000548363.jpg
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000548201.jpg
+Epoch [1/20], Step [2400/40504], Loss: 0.8755
+Epoch [1/20], Step [2450/40504], Loss: 0.9171
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000547000.jpg
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000546877.jpg
+Epoch [1/20], Step [2500/40504], Loss: 0.8458
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000546245.jpg
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000546126.jpg
+Epoch [1/20], Step [2550/40504], Loss: 0.8631
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000545441.jpg
+Epoch [1/20], Step [2600/40504], Loss: 0.8550
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000544444.jpg
+Epoch [1/20], Step [2650/40504], Loss: 0.8571
+Epoch [1/20], Step [2700/40504], Loss: 0.8303
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000542777.jpg
+Epoch [1/20], Step [2750/40504], Loss: 0.8466
+Epoch [1/20], Step [2800/40504], Loss: 0.8025
+Epoch [1/20], Step [2850/40504], Loss: 0.7803
+Epoch [1/20], Step [2900/40504], Loss: 0.7899
+Epoch [1/20], Step [2950/40504], Loss: 0.8091
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000539793.jpg
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000539777.jpg
+Epoch [1/20], Step [3000/40504], Loss: 0.8234
+Epoch [1/20], Step [3050/40504], Loss: 0.8196
+Epoch [1/20], Step [3100/40504], Loss: 0.7816
+Epoch [1/20], Step [3150/40504], Loss: 0.7923
+Epoch [1/20], Step [3200/40504], Loss: 0.7848
+Epoch [1/20], Step [3250/40504], Loss: 0.7962
+Epoch [1/20], Step [3300/40504], Loss: 0.8103
+Epoch [1/20], Step [3350/40504], Loss: 0.8760
+Epoch [1/20], Step [3400/40504], Loss: 0.7687
+Epoch [1/20], Step [3450/40504], Loss: 0.8427
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000531929.jpg
+Epoch [1/20], Step [3500/40504], Loss: 0.8541
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000531739.jpg
+Epoch [1/20], Step [3550/40504], Loss: 0.7686
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000530860.jpg
+Epoch [1/20], Step [3600/40504], Loss: 0.8762
+Epoch [1/20], Step [3650/40504], Loss: 0.7985
+Epoch [1/20], Step [3700/40504], Loss: 0.7448
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000528578.jpg
+Epoch [1/20], Step [3750/40504], Loss: 0.8292
+Epoch [1/20], Step [3800/40504], Loss: 0.8060
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000527510.jpg
+Epoch [1/20], Step [3850/40504], Loss: 0.7337
+Epoch [1/20], Step [3900/40504], Loss: 0.7926
+Epoch [1/20], Step [3950/40504], Loss: 0.7904
+Epoch [1/20], Step [4000/40504], Loss: 0.7974
+Epoch [1/20], Step [4050/40504], Loss: 0.7382
+Epoch [1/20], Step [4100/40504], Loss: 0.7416
+Epoch [1/20], Step [4150/40504], Loss: 0.7291
+Epoch [1/20], Step [4200/40504], Loss: 0.8277
+Epoch [1/20], Step [4250/40504], Loss: 0.7807
+Epoch [1/20], Step [4300/40504], Loss: 0.8607
+Epoch [1/20], Step [4350/40504], Loss: 0.8014
+Epoch [1/20], Step [4400/40504], Loss: 0.8110
+Epoch [1/20], Step [4450/40504], Loss: 0.8810
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000517973.jpg
+Epoch [1/20], Step [4500/40504], Loss: 0.8523
+Epoch [1/20], Step [4550/40504], Loss: 0.9136
+Epoch [1/20], Step [4600/40504], Loss: 0.8863
+Epoch [1/20], Step [4650/40504], Loss: 0.8554
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000515347.jpg
+Epoch [1/20], Step [4700/40504], Loss: 1.1526
+Epoch [1/20], Step [4750/40504], Loss: 1.1921
+Epoch [1/20], Step [4800/40504], Loss: 1.4686
+Epoch [1/20], Step [4850/40504], Loss: 1.7899
+Epoch [1/20], Step [4900/40504], Loss: 2.5257
+Epoch [1/20], Step [4950/40504], Loss: 1.5618
+Epoch [1/20], Step [5000/40504], Loss: 1.6142
+Epoch [1/20], Step [5050/40504], Loss: 1.7821
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000509037.jpg
+Epoch [1/20], Step [5100/40504], Loss: 1.5002
+Epoch [1/20], Step [5150/40504], Loss: 1.3737
+Epoch [1/20], Step [5200/40504], Loss: 1.6069
+Epoch [1/20], Step [5250/40504], Loss: 1.5050
+Epoch [1/20], Step [5300/40504], Loss: 1.3504
+Epoch [1/20], Step [5350/40504], Loss: 1.3402
+no kp:  /dev/shm/MSCOCO2014_yingxin/COCO_val2014_000000505040.jpg
+Epoch [1/20], Step [5400/40504], Loss: 1.4859
+Epoch [1/20], Step [5450/40504], Loss: 1.5183
+Epoch [1/20], Step [5500/40504], Loss: 1.4692
+Epoch [1/20], Step [5550/40504], Loss: 1.3366
+Epoch [1/20], Step [5600/40504], Loss: 1.3384
+
