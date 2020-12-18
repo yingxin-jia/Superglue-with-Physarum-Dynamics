@@ -1,13 +1,17 @@
-# SuperGlue PyTorch Implementation
+# SuperGlue with Physarum Dynamics
 
 ## Introduction
 <p align="center">
   <img src="assets/superglue1.png" width="400"/>
 </p>
 
- The SuperGlue network is a Graph Neural Network combined with an Optimal Matching layer that is trained to perform matching on two sets of sparse image features. SuperGlue operates as a "middle-end," performing context aggregation, matching, and filtering in a single end-to-end architecture. 
+ This repository contains the implementation of SuperGlue with its original Sinkhorn Algorithm replaced by *Physarum Dynamics* solver. Physarum Dynamics is a very efficient  differentiable solver for general linear programming problems. Physarum Dynamics can be used in a plug and play manner within deep neural networks as a layer, which converges quickly without the need for a feasible initial point. 
 
- Correspondences across images have some constraints:
+For more details, please see:
+* Physarum Dynamics full paper: [Physarum Powered Differentiable Linear Programming Layers and Applications](https://arxiv.org/abs/2004.14539).
+* SuperGlue full paper: [SuperGlue: Learning Feature Matching with Graph Neural Networks](https://arxiv.org/abs/1911.11763).
+
+ The SuperGlue network is a Graph Neural Network combined with an Optimal Matching layer that is trained to perform matching on two sets of sparse image features. SuperGlue operates as a "middle-end," performing context aggregation, matching, and filtering in a single end-to-end architecture. Correspondences across images have some constraints:
  * A keypoint can have at most a single correspondence in the another image.
  * Some keypoints will be unmatched due to occlusion and failure of the detector.
 
@@ -16,10 +20,6 @@
 <p align="center">
   <img src="assets/superglue2.png"/>
 </p>
-
-This repo includes PyTorch code for training the SuperGlue matching network on top of [SIFT](http://www.diva-portal.org/smash/get/diva2:480321/FULLTEXT02) keypoints and descriptors.
-For more details, please see:
-* Full paper PDF: [SuperGlue: Learning Feature Matching with Graph Neural Networks](https://arxiv.org/abs/1911.11763).
 
 ## Dependencies
 * Python 3
@@ -68,14 +68,14 @@ python train.py
 * Use `--viz_extension` to set the visualization file extension (default: `png`). Use pdf for highest-quality.
 
 ### Visualization Demo
-The matches are colored by their predicted confidence in a jet colormap (Red: more confident, Blue: less confident).
+Due to space constraints, the experimentations bellow allow a small number of keypoints. This constraint will possibly be lifted if using sparse-sparse matrix multiplication.
+The matches are colored by their predicted confidence in a jet colormap (Red: more confident, Blue: less confident). 
 
 You should see images like this inside of `dump_match_pairs/`
 
-<img src="assets/8349_matches.png" width="800">
-<img src="assets/4599_matches2.png" width="800">
-<img src="assets/2799_matches.png" width="800">
-<img src="assets/3849_matches2.png" width="800">
-<img src="assets/3949_matches.png" width="800">
-
+<img src="assets/49_matches.png" width="800">
+<img src="assets/219_matches2.png" width="800">
+<img src="assets/149_matches.png" width="800">
+<img src="assets/439_matches2.png" width="800">
+<img src="assets/699_matches.png" width="800">
 
